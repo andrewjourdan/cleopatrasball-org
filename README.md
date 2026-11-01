@@ -62,7 +62,7 @@ No license is granted to copy, modify, distribute, publicly display or create de
 The following are not owned by the Owner and are used under their own terms:
 
 - ***Antony and Cleopatra*** by William Shakespeare is in the public domain.
-- **Ancient Egyptian motifs and deities** (Khepri, Horus, Bastet, Anubis), and the ancient Egyptian word *ḥb* (festival), are in the public domain. The Owner claims rights only in the original drawings and arrangement made for this site.
+- **Ancient Egyptian motifs and deities** (Khepri, Horus, Bastet, Anubis), and the ancient Egyptian word *ḥeb* (festival), are in the public domain. The Owner claims rights only in the original drawings and arrangement made for this site.
 - **Fonts:** Marcellus, Spectral and DM Mono are loaded from Google Fonts and licensed under the SIL Open Font License 1.1. They are not owned by the Owner.
 - **Names of institutions and places:** The Public Theater, Delacorte Theater, Central Park Conservancy, The Metropolitan Museum of Art, The British Museum, Westminster City Council, Historic England, Musée du Louvre, Société des Amis du Louvre, the Grand Egyptian Museum, Egypt's Ministry of Tourism and Antiquities, UNESCO, the American Research Center in Egypt, the Egypt Exploration Society and all other organizations named on the site are the names and trademarks of their respective owners. They are used only to identify those organizations and the places proposed for the event.
 
