@@ -157,10 +157,13 @@ table.ledger{width:100%;min-width:720px;border-collapse:collapse;font-size:15.5p
 .links a{display:flex;justify-content:space-between;gap:12px;padding:10px 0;text-decoration:none;color:var(--papyrus);font-size:16px}
 .links a span{color:var(--papyrus-dim);font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;white-space:nowrap;padding-top:4px}
 .links a:hover{color:var(--gold)}
-
+.links a::after{content:"\2197";color:var(--gold-dim);order:3}
 .stone dl{margin:12px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 16px;font-size:14.5px}
 .stone dt{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--papyrus-dim);padding-top:3px}
 .stone dd{margin:0}
+
+/* prologue */
+.prologue{background:radial-gradient(ellipse 55% 80% at 90% 20%,rgba(244,227,176,.08),transparent 70%),#060C1F;border-top:1px solid var(--line)}
 
 /* eclipse interlude */
 .interlude{background:radial-gradient(ellipse 60% 90% at 85% 50%,rgba(244,227,176,.10),transparent 70%),#060C1F;border-top:1px solid var(--line)}
@@ -257,6 +260,12 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
       <circle cx="18" cy="48" r="2.6" style="fill:var(--spot)"/>
       <path d="M28 40q-4 10 0 20" style="stroke:var(--spot)" stroke-width="1.6" fill="none"/>
     </symbol>
+    <symbol id="khonsu" viewBox="0 0 100 100">
+      <path fill="currentColor" d="M14 46a36 36 0 0 0 72 0 30 30 0 0 1-72 0z"/>
+      <circle cx="50" cy="38" r="22" fill="currentColor"/>
+      <circle cx="56" cy="34" r="20" style="fill:var(--spot)" opacity=".35"/>
+      <rect x="46" y="80" width="8" height="16" fill="currentColor"/>
+    </symbol>
     <symbol id="needle" viewBox="0 0 22 30">
       <path fill="currentColor" d="M11 0l4 5H7zM7 6h8l1 21H6z"/><rect x="3" y="27" width="16" height="3" fill="currentColor"/>
     </symbol>
@@ -268,6 +277,7 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
     <a class="brand" href="#top"><svg aria-hidden="true"><use href="#needle"/></svg>The Four Hebs</a>
     <ul>
       <li><a href="#migration">Migration</a></li>
+      <li><a href="#prologue">Prologue</a></li>
       <li><a href="#manhattan">Manhattan</a></li>
       <li><a href="#london">London</a></li>
       <li><a href="#paris">Paris</a></li>
@@ -288,10 +298,10 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
       <p class="eyebrow">Four seasons &#183; Four cities &#183; One migration</p>
       <h1>Antony <span class="amp">&amp;</span><br>Cleopatra</h1>
       <p class="sub">The Four Hebs</p>
-      <p class="lede">William Shakespeare's tragedy of Rome and Egypt, staged at every change of season along the road Egypt's obelisks travelled. The play opens in Manhattan in spring, crosses to London for summer and Paris for autumn, then comes home to Luxor and the pyramids of Giza in winter.</p>
+      <p class="lede">William Shakespeare's tragedy of Rome and Egypt, staged at every change of season along the road Egypt's obelisks travelled. The play opens in Manhattan in spring, crosses to London for summer and Paris for autumn, then comes home to Luxor and the pyramids of Giza in winter. A prologue in Luxor, under February's eclipsed full moon, sets the journey in motion.</p>
       <div class="countdown" role="status">
-        <span class="mono">Heb I &#183; Spring equinox &#183; 20 March 2027</span>
-        <strong id="countdown">Opening in spring</strong>
+        <span class="mono">Prologue &#183; Luxor &#183; 20 February 2027</span>
+        <strong id="countdown">Begins in February</strong>
       </div>
       <div class="ctas">
         <a class="btn" href="#migration">Follow the migration</a>
@@ -348,7 +358,7 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
     <div class="section-head">
       <p class="eyebrow">The route</p>
       <h2>Following the obelisks home</h2>
-      <p>Three obelisks left Egypt in the 1800s. Two came from Heliopolis and now stand in Central Park and on the Thames, both called Cleopatra's Needle. The third left the gate of Luxor Temple for the Place de la Concorde, and its twin still stands in Luxor today. The Four Hebs travel that road in reverse, one city per season, and finish where the stones began.</p>
+      <p>Three obelisks left Egypt in the 1800s. Two came from Heliopolis and now stand in Central Park and on the Thames, both called Cleopatra's Needle. The third left the gate of Luxor Temple for the Place de la Concorde, and its twin still stands in Luxor today. The Four Hebs travel that road in reverse, one city per season, and finish where the stones began. The journey opens with a prologue in Luxor on the night of February's lunar eclipse.</p>
     </div>
 
     <div class="route-box">
@@ -378,6 +388,7 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
             <use href="#jackal" x="-15" y="-15" width="30" height="30" style="color:#A3BBEE"/>
             <text y="-40" fill="#EFE6CC" font-size="17" font-family="Marcellus, Georgia, serif">Luxor &#183; Thebes</text>
             <text y="56" fill="#A3BBEE" font-size="11" letter-spacing="1.5">IV &#183; WINTER</text>
+            <text y="74" fill="#F4E3B0" font-size="11" letter-spacing="1.5">PROLOGUE &#183; FEB</text>
           </g>
           <g transform="translate(920 112)">
             <circle r="26" fill="#0A1430" stroke="#D6AE57" stroke-width="2"/>
@@ -393,6 +404,7 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
       <table class="ledger">
         <thead><tr><th>Heb</th><th>Opens</th><th>City</th><th>Stage</th><th>Gala</th></tr></thead>
         <tbody>
+          <tr><td><span class="dot" style="background:var(--corona)"></span>Prologue</td><td class="mono">20&#8211;21 Feb 2027 &#183; lunar eclipse</td><td>Luxor &#183; Thebes</td><td>Luxor Temple</td><td>Night of the shadowed moon</td></tr>
           <tr><td><span class="dot" style="background:var(--spring)"></span>I &#183; Spring</td><td class="mono">20 Mar 2027 &#183; equinox</td><td>Manhattan</td><td>Delacorte Theater, Central Park</td><td>Light show at Cleopatra's Needle; ball at the Temple of Dendur</td></tr>
           <tr><td><span class="dot" style="background:var(--summer)"></span>II &#183; Summer</td><td class="mono">21 Jun 2027 &#183; solstice</td><td>London</td><td>Cleopatra's Needle, Victoria Embankment</td><td>Midsummer evenings beside the Embankment Gardens</td></tr>
           <tr><td><span class="dot" style="background:var(--corona)"></span>Interlude</td><td class="mono">2 Aug 2027 &#183; total eclipse</td><td>Luxor &#8594; Cairo</td><td>Patron expedition by Nile</td><td><a href="patronage/">Black Moon performance in London, 31 Aug</a></td></tr>
@@ -404,6 +416,64 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
     </div>
   </div>
 </section>
+
+<!-- PROLOGUE -->
+<aside class="band heb prologue" id="prologue" style="--season:var(--corona)" aria-labelledby="prologue-title">
+  <svg class="ghost" style="right:-40px;top:40px" aria-hidden="true"><use href="#khonsu"/></svg>
+  <div class="wrap">
+    <div class="heb-head">
+      <div>
+        <span class="chip">Prologue &#183; Penumbral lunar eclipse &#183; 20&#8211;21 February 2027</span>
+        <h2 id="prologue-title">Luxor<small>Luxor Temple &#183; The full moon over Thebes</small></h2>
+      </div>
+      <div class="emblem">
+        <svg aria-hidden="true"><use href="#khonsu"/></svg>
+        <p><b>Khonsu.</b> The moon god of Thebes, who crossed the night sky. His temple still stands at Karnak.</p>
+      </div>
+    </div>
+    <div class="heb-grid">
+      <div>
+        <p class="lede">Before the migration begins, the play is first heard where the stones began. On the night of 20&#8211;21 February 2027, the full moon over Thebes passes through the outer shadow of the Earth, and one month later the first heb opens in Manhattan.</p>
+        <ol class="evening">
+          <li><span class="when">10:30 pm</span><div><h3>The gathering</h3><p>Guests gather at the lighted Luxor Temple, beside the obelisk of Ramesses II whose twin stands in Paris.</p></div></li>
+          <li><span class="when">11:12 pm</span><div><h3>The shadow arrives</h3><p>The Earth's outer shadow touches the moon. A staged reading of Antony and Cleopatra begins under the open sky.</p></div></li>
+          <li><span class="when">1:13 am</span><div><h3>The shadowed moon</h3><p>Greatest eclipse. One edge of the moon dims to a soft gray, and the Four Hebs are proclaimed: the play will travel west to Manhattan, London and Paris, and come home to Luxor in winter.</p></div></li>
+          <li><span class="when">3:13 am</span><div><h3>The moon restored</h3><p>The shadow leaves the moon, and the migration begins.</p></div></li>
+        </ol>
+        <p class="sample">Times are Luxor time (EET). A penumbral eclipse is subtle, and like every lunar eclipse it is safe to watch with the naked eye.</p>
+      </div>
+      <aside class="ledger-card">
+        <div class="benefit">
+          <h3>Proceeds benefit</h3>
+          <ul>
+            <li>Luxor Temple<span>lighting and conservation</span></li>
+            <li>Khonsu Temple at Karnak<span>conservation of the moon god's temple</span></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Museums &amp; preservation</h3>
+          <ul>
+            <li><a href="https://egymonuments.gov.eg/" target="_blank" rel="noopener">Egypt's Ministry of Tourism and Antiquities<span>egymonuments.gov.eg</span></a></li>
+            <li><a href="https://arce.org/?p=8640" target="_blank" rel="noopener">Khonsu Temple Conservation Project (ARCE)<span>arce.org</span></a></li>
+            <li><a href="https://whc.unesco.org/en/list/87" target="_blank" rel="noopener">Ancient Thebes with its Necropolis (UNESCO)<span>whc.unesco.org</span></a></li>
+          </ul>
+        </div>
+        <div class="stone">
+          <h3>The sky</h3>
+          <dl>
+            <dt>Eclipse</dt><dd>Penumbral lunar eclipse</dd>
+            <dt>Begins</dt><dd class="mono">20 Feb &#183; 11:12 pm</dd>
+            <dt>Greatest</dt><dd class="mono">21 Feb &#183; 1:13 am</dd>
+            <dt>Ends</dt><dd class="mono">21 Feb &#183; 3:13 am</dd>
+            <dt>Duration</dt><dd>About 4 hours</dd>
+            <dt>Magnitude</dt><dd class="mono">0.93 (penumbral)</dd>
+            <dt>The moon</dt><dd>Near perigee, so it appears slightly larger</dd>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </div>
+</aside>
 
 <!-- HEB I -->
 <section class="band heb" id="manhattan" style="--season:var(--spring)">
@@ -784,7 +854,7 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
   <div class="wrap">
     <p class="sig">The Four Hebs &#183; Antony &amp; Cleopatra</p>
     <p>The Four Hebs is a concept in development by Andrew Jourdan. It is not a registered business or charity, and no tickets, memberships or donations are offered on this page. The theaters, parks, museums and societies named here are proposed beneficiaries and preservation contacts; none has agreed to take part, and no partnership, affiliation or endorsement is implied.</p>
-    <p>Antony and Cleopatra by William Shakespeare (first performed about 1607) is in the public domain. Dates follow the 2027 equinoxes and solstices and are proposed.</p>
+    <p>Antony and Cleopatra by William Shakespeare (first performed about 1607) is in the public domain. Dates follow the 2027 equinoxes, solstices and eclipses and are proposed.</p>
     <p>&copy; 2026 Andrew Nahmias (Andrew Jourdan). All rights reserved.</p>
   </div>
 </footer>
@@ -793,10 +863,10 @@ footer .sig{font-family:var(--f-display);color:var(--papyrus);font-size:18px}
 (function(){
   try{
     var el=document.getElementById('countdown');
-    var opens=Date.UTC(2027,2,20,20,24);
+    var opens=Date.UTC(2027,1,20,21,12);
     var days=Math.ceil((opens-Date.now())/86400000);
-    if(days>1){el.textContent='Opens in '+days+' days';}
-    else if(days===1){el.textContent='Opens tomorrow';}
+    if(days>1){el.textContent='Begins in '+days+' days';}
+    else if(days===1){el.textContent='Begins tomorrow';}
     else{el.textContent='The migration has begun';}
   }catch(e){}
   var btn=document.getElementById('copy-addr'),addr=document.getElementById('inq-addr');

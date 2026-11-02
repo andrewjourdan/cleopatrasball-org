@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Eclipse Expedition &#183; Cleopatra's Ball</title>
-<meta name="description" content="A patron expedition from London to Luxor for the total solar eclipse of 2 August 2027, north on the Nile to Cairo and Giza, and home to London for the Black Moon performance of Antony and Cleopatra.">
+<meta name="description" content="A patron expedition that opens with a prologue under the lunar eclipse at Luxor on 20&#8211;21 February 2027, then travels from London to Luxor for the total solar eclipse of 2 August 2027, north on the Nile to Cairo and Giza, and home to London for the Black Moon performance of Antony and Cleopatra.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap">
@@ -71,11 +71,13 @@ p{margin:0}
 .hero h1{font-size:clamp(48px,8vw,104px);margin-top:18px}
 .hero h1 em{font-style:normal;color:var(--gold)}
 .hero .lede{max-width:58ch;margin-top:24px;font-size:19.5px}
-.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px;border-block:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:30px;border-block:1px solid var(--line)}
 .facts div{padding:14px 16px 14px 0}
 .facts div + div{padding-left:16px;border-left:1px solid var(--line)}
 .facts dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--papyrus-dim)}
 .facts dd{margin:4px 0 0;font-family:var(--f-display);font-size:24px;line-height:1.15}
+.facts div:nth-child(3){padding-left:0;border-left:0}
+.facts div:nth-child(n+3){border-top:1px solid var(--line)}
 @media (max-width:520px){.facts{grid-template-columns:1fr}.facts div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
 .countdown{display:inline-flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;margin-top:26px;padding:12px 16px;border:1px solid var(--line);border-left:3px solid var(--corona);background:rgba(15,29,66,.6)}
 .countdown span{font-family:var(--f-mono);font-size:13px;color:var(--papyrus-dim);letter-spacing:.06em}
@@ -129,6 +131,8 @@ p{margin:0}
 .days p{margin-top:6px;color:var(--papyrus-dim);font-size:16.5px}
 .days li.peak{background:linear-gradient(90deg,rgba(244,227,176,.10),transparent 70%);border-left:3px solid var(--corona);padding-left:14px;margin-left:-17px}
 .days li.peak h4{color:var(--corona)}
+.days li.peak.moonlit{border-left-color:var(--papyrus-dim);background:linear-gradient(90deg,rgba(180,174,153,.10),transparent 70%)}
+.days li.peak.moonlit h4{color:var(--papyrus)}
 .timeline{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;margin-top:12px;font-size:15.5px}
 .timeline dt{font-family:var(--f-mono);font-size:12.5px;color:var(--corona);padding-top:3px;white-space:nowrap}
 .timeline dd{margin:0;color:var(--papyrus)}
@@ -244,6 +248,12 @@ footer .back{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;tex
       <circle cx="18" cy="48" r="2.6" style="fill:var(--spot)"/>
       <path d="M28 40q-4 10 0 20" style="stroke:var(--spot)" stroke-width="1.6" fill="none"/>
     </symbol>
+    <symbol id="khonsu" viewBox="0 0 100 100">
+      <path fill="currentColor" d="M14 46a36 36 0 0 0 72 0 30 30 0 0 1-72 0z"/>
+      <circle cx="50" cy="38" r="22" fill="currentColor"/>
+      <circle cx="56" cy="34" r="20" style="fill:var(--spot)" opacity=".35"/>
+      <rect x="46" y="80" width="8" height="16" fill="currentColor"/>
+    </symbol>
     <symbol id="disk" viewBox="0 0 100 100">
       <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="5"/>
       <circle cx="50" cy="50" r="30" fill="currentColor"/>
@@ -271,10 +281,11 @@ footer .back{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;tex
 <header class="band hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">Patronage &#183; The Eclipse Expedition &#183; Summer 2027</p>
+      <p class="eyebrow">Patronage &#183; The Eclipse Expedition &#183; 2027</p>
       <h1>The <em>terrene moon</em> eclipsed</h1>
-      <p class="lede">A patron journey from London to Luxor for the longest total solar eclipse over land this century, north on the Nile to Cairo and the pyramids of Giza, and home to London for the Black Moon performance of Antony and Cleopatra beside Cleopatra's Needle.</p>
+      <p class="lede">A patron journey in two parts. In February, a prologue under the eclipsed full moon at Luxor Temple. In summer, London to Luxor for the longest total solar eclipse over land this century, north on the Nile to Cairo and the pyramids of Giza, and home to London for the Black Moon performance of Antony and Cleopatra beside Cleopatra's Needle.</p>
       <dl class="facts">
+        <div><dt>Prologue &#183; lunar eclipse</dt><dd>20&#8211;21 Feb 2027</dd></div>
         <div><dt>Totality in Luxor</dt><dd>2 Aug 2027</dd></div>
         <div><dt>Length of totality</dt><dd>6 min 19 s</dd></div>
         <div><dt>Black Moon performance</dt><dd>31 Aug 2027</dd></div>
@@ -333,12 +344,33 @@ footer .back{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;tex
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">The journey &#183; Proposed itinerary</p>
-      <h2>London to Luxor, north on the Nile, and home for the Black Moon</h2>
-      <p>Five chapters across one month of summer. Patrons leave London on 30 July, stand in Luxor for totality on 2 August, sail north with the current to Cairo, and return to London for the Black Moon performance on the night of the month's second new moon.</p>
+      <h2>A prologue in Luxor, then London to Luxor, north on the Nile, and home for the Black Moon</h2>
+      <p>The journey opens in February with a short prologue at Luxor Temple on the night of the lunar eclipse. Then come five chapters across one month of summer. Patrons leave London on 30 July, stand in Luxor for totality on 2 August, sail north with the current to Cairo, and return to London for the Black Moon performance on the night of the month's second new moon.</p>
     </div>
 
     <div class="journey-grid">
       <div>
+        <!-- PROLOGUE -->
+        <div class="chapter">
+          <div class="chapter-head">
+            <svg aria-hidden="true"><use href="#khonsu"/></svg>
+            <div><span class="eyebrow">Prologue &#183; February 2027</span><h3>The shadowed moon over Thebes</h3></div>
+          </div>
+          <ol class="days">
+            <li><span class="date"><b>Fri 19 Feb</b>Depart</span><div><h4>London to Luxor</h4><p>Flight from London to Luxor and transfer to the East Bank. A first evening walk along the corniche under the near-full moon.</p></div></li>
+            <li class="peak moonlit"><span class="date"><b>Sat 20 Feb</b>Luxor</span><div><h4>The lunar eclipse at Luxor Temple</h4><p>Karnak and the Temple of Khonsu, the moon god of Thebes, by day. At night the full moon passes through the outer shadow of the Earth, and the Four Hebs are proclaimed at Luxor Temple.</p>
+              <dl class="timeline">
+                <dt>10:30 pm</dt><dd>Patrons gather at the lighted Luxor Temple, beside the obelisk whose twin stands in Paris.</dd>
+                <dt>11:12 pm</dt><dd>The Earth's outer shadow touches the moon. A staged reading of Antony and Cleopatra begins.</dd>
+                <dt>1:13 am</dt><dd>Greatest eclipse. One edge of the moon dims to a soft gray, and the Four Hebs are proclaimed.</dd>
+                <dt>3:13 am</dt><dd>The shadow leaves the moon.</dd>
+              </dl></div></li>
+            <li><span class="date"><b>Sun 21 Feb</b>West Bank</span><div><h4>A slow morning, then the West Bank</h4><p>A late start after the long night, then the Temple of Hatshepsut and the Colossi of Memnon in the afternoon light.</p></div></li>
+            <li><span class="date"><b>Mon 22 Feb</b>Return</span><div><h4>Luxor to London</h4><p>Flight home. One month later, the first heb opens in Manhattan.</p></div></li>
+          </ol>
+          <p class="interval">The prologue is a separate short journey in February. The summer expedition below begins in London on 30 July.</p>
+        </div>
+
         <!-- I -->
         <div class="chapter">
           <div class="chapter-head">
@@ -441,6 +473,7 @@ footer .back{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;tex
             <circle cx="126" cy="704" r="9" fill="#F4E3B0"/><circle cx="126" cy="704" r="6" fill="#0A1430"/>
             <text x="144" y="700">Luxor</text>
             <text x="144" y="717" font-family="DM Mono, ui-monospace, monospace" font-size="10" fill="#F4E3B0">TOTALITY 2 AUG</text>
+            <text x="144" y="732" font-family="DM Mono, ui-monospace, monospace" font-size="10" fill="#B4AE99">PROLOGUE 20 FEB</text>
           </g>
         </svg>
         <p class="nile-note">Schematic, not to scale. The Nile flows north.</p>
@@ -490,9 +523,10 @@ footer .back{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;tex
       </article>
       <article class="circle featured">
         <svg aria-hidden="true"><use href="#perch"/></svg>
-        <div><h3>Expedition Circle</h3><p class="span">The full journey &#183; 30 July to 31 August</p></div>
+        <div><h3>Expedition Circle</h3><p class="span">The full journey &#183; February, then 30 July to 31 August</p></div>
         <ul>
-          <li>Every chapter: Luxor, totality, the Nile north to Cairo, Saqqara and Giza</li>
+          <li>The February prologue: the lunar eclipse and the proclamation of the Four Hebs at Luxor Temple</li>
+          <li>Every summer chapter: Luxor, totality, the Nile north to Cairo, Saqqara and Giza</li>
           <li>Private cabin on the chartered expedition vessel</li>
           <li>The Grand Egyptian Museum and the farewell dinner at Giza</li>
           <li>Everything in the Eclipse and Black Moon Circles</li>
@@ -513,8 +547,8 @@ footer .back{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;tex
       <p>Totality falls at midday in one of the hottest places on Earth in its hottest month. The expedition is planned around that.</p>
     </div>
     <div class="practical-grid">
-      <div><h3>Eye safety</h3><p>Every patron receives certified eclipse glasses meeting <strong>ISO 12312-2</strong>. Looking at any part of the uncovered sun without them causes lasting eye damage. Glasses come off only during totality, on the guide's call, and go back on before the sun returns.</p></div>
-      <div><h3>Heat</h3><p>Midday temperatures in Luxor in August can reach <strong>43&#176;C (109&#176;F)</strong>. Viewing takes place from a shaded, air-conditioned base with water and rest areas, and touring is scheduled for early morning and evening.</p></div>
+      <div><h3>Eye safety</h3><p>Every patron receives certified eclipse glasses meeting <strong>ISO 12312-2</strong>. Looking at any part of the uncovered sun without them causes lasting eye damage. Glasses come off only during totality, on the guide's call, and go back on before the sun returns. The February lunar eclipse needs no eye protection.</p></div>
+      <div><h3>Heat</h3><p>February nights in Luxor are cool, so bring a warm layer for the eclipse. Midday temperatures in August can reach <strong>43&#176;C (109&#176;F)</strong>. Viewing takes place from a shaded, air-conditioned base with water and rest areas, and touring is scheduled for early morning and evening.</p></div>
       <div><h3>Medical care</h3><p>A medical team travels with the expedition in Luxor and on the river. Patrons are asked to share any conditions that the heat or long days could affect.</p></div>
       <div><h3>Insurance</h3><p>Comprehensive travel and medical insurance, including evacuation cover, is required for all Eclipse and Expedition Circle patrons.</p></div>
       <div><h3>Passports and visas</h3><p>A passport valid for at least six months is needed, and most visitors need a visa for Egypt. Details will be sent to registered patrons.</p></div>
@@ -577,7 +611,7 @@ footer .back{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;tex
     <p class="sig">The Eclipse Expedition &#183; The Four Hebs &#183; Cleopatra's Ball</p>
     <p><a class="back" href="../">&#8592; Back to The Four Hebs</a></p>
     <p>The Eclipse Expedition is part of The Four Hebs, a concept in development by Andrew Jourdan. It is not a registered business, charity or travel company. No bookings, payments or donations are accepted on this page, and registering interest creates no obligation for either party. Any travel will be arranged and sold by a licensed tour operator, and any contributions will be received through a registered nonprofit partner.</p>
-    <p>The itinerary, dates, sites, circles and beneficiaries described here are proposed and subject to change, to permits from the relevant authorities, and to safety conditions at the time of travel. The organizations named are proposed beneficiaries; none has agreed to take part, and no partnership, affiliation or endorsement is implied. Eclipse times are for Luxor and are approximate.</p>
+    <p>The itinerary, dates, sites, circles and beneficiaries described here are proposed and subject to change, to permits from the relevant authorities, and to safety conditions at the time of travel. The organizations named are proposed beneficiaries; none has agreed to take part, and no partnership, affiliation or endorsement is implied. Eclipse times are for Luxor (EET in February, EEST in August) and are approximate.</p>
     <p>Antony and Cleopatra by William Shakespeare is in the public domain. &#169; 2026 Andrew Nahmias (Andrew Jourdan). All rights reserved.</p>
   </div>
 </footer>
