@@ -112,3 +112,14 @@ Dates and details
 All dates, venues, programs, itineraries and beneficiaries described on the website are proposed and subject to change or cancellation.
 
 This is intellectual property and is protected by intellectual property rights.
+
+
+## Website maintenance
+
+The preferred URL is https://cleopatrasball.org/; the patronage page is https://cleopatrasball.org/patronage/.
+
+Run `python3 scripts/check_site.py` before submitting changes. GitHub Actions runs the same checks on pull requests and main. Check mobile and desktop layouts and countdown behavior around the event time before publishing.
+
+Repository settings: protect main with pull requests, block force pushes and deletion, and require the Site checks job after its first successful run. For a sole maintainer, do not require another person's approval. Enable automatic deletion of merged branches. Use the root domain as the repository homepage.
+
+Launch verification: confirm Pages publishes main from the root; enforce HTTPS; verify root and www redirect behavior and Cloudflare DNS; verify inquiry mailbox delivery with a real inbound test. A mailto link does not prove mailbox delivery.
