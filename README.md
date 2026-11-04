@@ -1,5 +1,16 @@
 The Four Hebs · Cleopatra's Ball
 
+## What the owner needs to know
+
+The website runs on GitHub Pages. You do not need to run commands to keep it online.
+The preview and validation commands are for whoever makes website changes.
+
+- Keep the domain registration renewed and account recovery details current.
+- After changes, review the live site on a phone and computer and report broken links or missing inquiries promptly.
+- Test inquiry delivery to inquiry@cleopatrasball.org. Review both the homepage and patronage page, and keep proposed event dates, venues and itineraries current.
+
+Developer instructions: see [For developers](#for-developers) below.
+
 Website: cleopatrasball.org Patronage: cleopatrasball.org/patronage Inquiries: inquiry@cleopatrasball.org
 
 The Four Hebs is a concept for a year-long series of performances of William Shakespeare's Antony and Cleopatra, staged at each change of season along the road Egypt's obelisks travelled. Two obelisks known as Cleopatra's Needle stand in Central Park and on London's Victoria Embankment. A third stands on the Place de la Concorde in Paris, and its twin still stands at the gate of Luxor Temple. The tour follows that road in reverse and finishes where the stones began.
@@ -114,7 +125,22 @@ All dates, venues, programs, itineraries and beneficiaries described on the webs
 This is intellectual property and is protected by intellectual property rights.
 
 
-## Website maintenance
+## For developers
+
+### Local preview
+
+Use Python 3.12 or newer for the documented commands. This static site has no package installation or build step.
+From the repository root, run:
+
+```sh
+python3 -m http.server 8000
+```
+
+Open http://localhost:8000/; stop the preview with Ctrl+C. Also open http://localhost:8000/patronage/.
+An internet connection is needed for externally loaded fonts.
+
+### Validation and publishing
+
 
 The preferred URL is https://cleopatrasball.org/; the patronage page is https://cleopatrasball.org/patronage/.
 
