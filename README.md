@@ -29,8 +29,8 @@ Heb IV · Winter	Opens 22 December 2027 · solstice	Luxor	Homecoming exhibition 
 Finale	Winter 2027–28	Giza	Nile voyage north; performances at the Giza pyramid complex with all three pyramids lit
 Eclipse data
 	Prologue	Eclipse Expedition	Black Moon
-Event	Penumbral lunar eclipse, magnitude 0.93	Total solar eclipse, totality about 6 min 19 s at Luxor	Second new moon of the month
-Local times	Begins 11:12 pm, greatest 1:13 am, ends 3:13 am (Luxor, EET)	Mid-totality 1:02 pm (Luxor, EEST)	New moon at 6:41 pm (London, BST)
+Event	Penumbral lunar eclipse, magnitude 0.93	Total solar eclipse, totality about 6 min 22 s at Luxor	Second new moon of the month
+Local times	Begins 11:12 pm, greatest 1:13 am, ends 3:13 am (Luxor, EET)	Totality begins 1:02 pm, mid-totality about 1:05 pm (Luxor, EEST)	New moon at 6:41 pm (London, BST)
 Viewing	Safe with the naked eye	Certified ISO 12312-2 eclipse glasses except during totality	Not visible; staged as the darkest night of the month
 
 Times are approximate and come from published eclipse and moon-phase tables.
